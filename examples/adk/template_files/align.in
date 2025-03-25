@@ -1,0 +1,7 @@
+parm top.pdb
+trajin ens.dcd
+reference top.pdb
+rmsd reference 
+trajout ens_aligned.dcd
+go
+quit

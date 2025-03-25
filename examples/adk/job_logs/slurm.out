@@ -1,0 +1,440 @@
+ *)
+ *)
+ ;;
+ ;;
+ ;;
+ ;;
+ ;;
+ ;;
+ ;;
+ ;;
+}
+}
+}
+}
+}
+AMBERHOME=/whale/software/amber24
+AMBER_PREFIX=/whale/software/amber24
+BASH_FUNC_ml%%=() {  module ml "$@"
+BASH_FUNC__module_raw%%=() {  unset _mlshdbg;
+BASH_FUNC_module%%=() {  unset _mlshdbg;
+BASH_FUNC_switchml%%=() {  swfound=1;
+BASH_FUNC_which%%=() {  ( alias;
+ case "$-" in 
+ case "$-" in 
+_CE_CONDA=
+_CE_M=
+CMD_WLM_CLUSTER_NAME=slurm
+ . /cm/local/apps/environment-modules/4.5.3//init/sh;
+CONDA_DEFAULT_ENV=westpa
+CONDA_EXE=/titan/anthony/apps/anaconda3/bin/conda
+CONDA_PREFIX_1=/titan/anthony/apps/anaconda3
+CONDA_PREFIX_2=/titan/anthony/apps/anaconda3/envs/westpa
+CONDA_PREFIX_3=/titan/anthony/apps/anaconda3
+CONDA_PREFIX=/titan/anthony/apps/anaconda3/envs/westpa
+CONDA_PROMPT_MODIFIER=(westpa) 
+CONDA_PYTHON_EXE=/titan/anthony/apps/anaconda3/bin/python
+CONDA_SHLVL=4
+CPATH=/cm/shared/apps/openmpi4/gcc/4.1.5/include:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include:/cm/shared/apps/slurm/current/include
+CPATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:1:/cm/shared/apps/openmpi4/gcc/4.1.5/include:1:/cm/shared/apps/slurm/current/include:1
+CUDA_CACHE_DISABLE=1
+CUDA_CMLOCAL_ROOT=/cm/local/apps/cuda/libs/current
+CUDA_HOME=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_INC_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_INC_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2:1
+CUDA_INSTALL_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_ROOT=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_SDK=/cm/shared/apps/cuda12.2/sdk/12.2.2
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8,9
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1138/bus
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+DISPLAY=localhost:10.0
+ do
+ do
+ done;
+ done;
+ echo "Cannot switch to Modules $swname version, command not found";
+ echo "Switching to Modules $swname version";
+ else
+ else
+ else
+ else
+ else
+ else
+ENABLE_LMOD=0
+ENVIRONMENT=BATCH
+ esac;
+ esac;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+ eval `eval ${_mlre} /usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash '"$@"'`;
+ eval `eval ${_mlre} /usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl sh '"$@"'`;
+ eval `/usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash "$@"`;
+ eval `/usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl sh "$@"`;
+ export MODULES_USE_COMPAT_VERSION;
+ fi
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+GPU_DEVICE_ORDINAL=0,1,2,3,4,5,6,7,8,9
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/home/anthony
+HOSTNAME=node004
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ if [ $swfound -eq 0 ]; then
+ if [ -e /cm/local/apps/environment-modules/4.5.3//libexec/modulecmd-compat ]; then
+ if [ -e /cm/local/apps/environment-modules/4.5.3//libexec/modulecmd.tcl ]; then
+ if [ -n "${IFS+x}" ]; then
+ if [ -n "${IFS+x}" ]; then
+ if [ -n "${_mlIFS+x}" ]; then
+ if [ -n "${_mlIFS+x}" ]; then
+ if [ -n "${_mlre:-}" ]; then
+ if [ -n "${_mlre:-}" ]; then
+ if [ -n "${_mlshdbg:-}" ]; then
+ if [ -n "${_mlshdbg:-}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ IFS=' ';
+ IFS=' ';
+ IFS=$_mlIFS;
+ IFS=$_mlIFS;
+INCLUDEPATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2/extras/Debugger/include:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include/CL:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include
+INCLUDEPATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/extras/Debugger/include:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include/CL:1
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:/cm/local/apps/cuda/libs/current/lib64:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:/whale/software/amber24/lib:/titan/anthony/apps/amber24/lib:/titan/anthony/apps/amber24/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64
+LD_LIBRARY_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:1:/whale/software/amber24/lib:1:/titan/anthony/apps/amber24/lib:1:/cm/shared/apps/slurm/current/lib64:1:/cm/shared/apps/openmpi4/gcc/4.1.5/lib:1:/cm/shared/apps/slurm/current/lib64/slurm:1:/cm/local/apps/cuda/libs/current/lib64:1
+LD_RUN_PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:/cm/local/apps/cuda/libs/current/lib64
+LD_RUN_PATH_modshare=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:1:/cm/local/apps/cuda/libs/current/lib64:1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LIBRARY_PATH=/cm/local/apps/cuda/libs/current/lib64:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64
+LIBRARY_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:1:/cm/shared/apps/slurm/current/lib64:1:/cm/shared/apps/slurm/current/lib64/slurm:1:/cm/local/apps/cuda/libs/current/lib64:1
+_LMFILES_=/cm/local/modulefiles/slurm/slurm/23.02.7:/whale/software/modulefiles/amber/2024:/cm/shared/modulefiles/cuda12.2/toolkit/12.2.2:/cm/shared/modulefiles/openmpi/gcc/64/4.1.5
+_LMFILES__modshare=/cm/shared/modulefiles/openmpi/gcc/64/4.1.5:1:/cm/local/modulefiles/slurm/slurm/23.02.7:1:/whale/software/modulefiles/amber/2024:1:/cm/shared/modulefiles/cuda12.2/toolkit/12.2.2:1
+LOADEDMODULES_modshare=openmpi/gcc/64/4.1.5:1:slurm/slurm/23.02.7:1:amber/2024:1:cuda12.2/toolkit/12.2.2:1
+LOADEDMODULES=slurm/slurm/23.02.7:amber/2024:cuda12.2/toolkit/12.2.2:openmpi/gcc/64/4.1.5
+LOGNAME=anthony
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:
+MAIL=/var/spool/mail/anthony
+MANPATH=/cm/shared/apps/openmpi4/gcc/4.1.5/share/man/:/cm/local/apps/cuda/libs/current/share/man:/cm/shared/apps/slurm/current/man:/cm/local/apps/environment-modules/4.5.3//share/man:/usr/local/share/man:/usr/share/man:/cm/local/apps/environment-modules/current/share/man:/cm/local/apps/environment-modules/current/share/man
+MANPATH_modshare=/cm/shared/apps/openmpi4/gcc/4.1.5/share/man/:1:/cm/local/apps/cuda/libs/current/share/man:1:/usr/local/share/man:1:/cm/local/apps/environment-modules/4.5.3//share/man:1:/cm/local/apps/environment-modules/current/share/man:1:/usr/share/man:1:/cm/shared/apps/slurm/current/man:1
+ _mlIFS=$IFS;
+ _mlIFS=$IFS;
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlshdbg=''
+ _mlshdbg=''
+ _mlshdbg='v'
+ _mlshdbg='v'
+ _mlshdbg='vx'
+ _mlshdbg='vx'
+ _mlshdbg='x'
+ _mlshdbg='x'
+ _mlstatus=$?;
+ _mlstatus=$?;
+MODULEPATH=/cm/local/modulefiles:/cm/shared/modulefiles:/whale/software/modulefiles:/data01/software/modulefiles
+MODULES_CMD=/cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl
+MODULESHOME=/cm/local/apps/environment-modules/4.5.3/
+MODULES_SET_SHELL_STARTUP=0
+ MODULES_USE_COMPAT_VERSION=1;
+MOTD_SHOWN=pam
+MPI_HOME=/cm/shared/apps/openmpi4/gcc/4.1.5
+MPI_RUN=/cm/shared/apps/openmpi4/gcc/4.1.5/bin/mpirun
+OLDPWD=/titan/anthony/voronoi2025/adk_pca
+PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/bin:/cm/local/apps/cuda/libs/current/bin:/cm/shared/apps/cuda12.2/sdk/12.2.2/bin/x86_64/linux/release:/cm/shared/apps/cuda12.2/toolkit/12.2.2/bin:/whale/software/amber24/bin:/titan/anthony/apps/amber24/bin:/titan/anthony/apps/dssp-2.3.0:/titan/anthony/apps/wham/wham-2d:/cm/local/apps/environment-modules/4.5.3/bin:/titan/anthony/apps/amber24/bin:/titan/anthony/apps/anaconda3/envs/westpa/bin:/titan/anthony/apps/anaconda3/condabin:/titan/anthony/apps/dssp-2.3.0:/titan/anthony/apps/wham/wham-2d:/cm/shared/apps/slurm/current/sbin:/cm/shared/apps/slurm/current/bin:/cm/local/apps/environment-modules/4.5.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/sbin:/cm/local/apps/environment-modules/4.5.3/bin:/home/anthony/.local/bin:/home/anthony/bin
+PATH_modshare=/home/anthony/bin:1:/usr/bin:1:/usr/local/bin:1:/cm/local/apps/cuda/libs/current/bin:1:/cm/shared/apps/slurm/current/bin:1:/titan/anthony/apps/anaconda3/envs/westpa/bin:1:/cm/shared/apps/slurm/current/sbin:1:/home/anthony/.local/bin:1:/titan/anthony/apps/dssp-2.3.0:1:/sbin:1:/cm/shared/apps/openmpi4/gcc/4.1.5/bin:1:/usr/sbin:1:/cm/local/apps/environment-modules/4.5.3/bin:1:/titan/anthony/apps/wham/wham-2d:1:/titan/anthony/apps/anaconda3/condabin:1:/titan/anthony/apps/amber24/bin:1:/whale/software/amber24/bin:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/bin:1:/usr/local/sbin:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/bin/x86_64/linux/release:1
+PERL5LIB_modshare=/whale/software/amber24/lib/perl:1:/titan/anthony/apps/amber24/lib/perl:1
+PERL5LIB=/whale/software/amber24/lib/perl:/titan/anthony/apps/amber24/lib/perl:/titan/anthony/apps/amber24/lib/perl
+PKG_CONFIG_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib/pkgconfig
+PKG_CONFIG_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib/pkgconfig:1
+PWD=/titan/anthony/voronoi2025/adk_pca
+PYTHONPATH_modshare=/whale/software/amber24/lib/python3.12/site-packages:1:/titan/anthony/apps/amber24/lib/python3.12/site-packages:1
+PYTHONPATH=/whale/software/amber24/lib/python3.12/site-packages:/titan/anthony/apps/amber24/lib/python3.12/site-packages:/titan/anthony/apps/amber24/lib/python3.12/site-packages
+QUICK_BASIS=/titan/anthony/apps/amber24/AmberTools/src/quick/basis
+ return $_mlstatus
+ return $_mlstatus
+ return 1;
+ROCR_VISIBLE_DEVICES=0,1,2,3,4,5,6,7,8,9
+S_COLORS=auto
+ set -$_mlshdbg;
+ set -$_mlshdbg;
+ set +v;
+ set +v;
+ set +vx;
+ set +vx;
+ set +x;
+ set +x;
+SHELL=/bin/bash
+SHLVL=2
+SIM_NAME=adk_pca
+SLURM_CLUSTER_NAME=slurm
+SLURM_CONF=/cm/shared/apps/slurm/var/etc/slurm/slurm.conf
+SLURM_CPUS_ON_NODE=10
+SLURMD_NODENAME=node004
+SLURM_GPUS_ON_NODE=10
+SLURM_GTIDS=0
+SLURM_JOB_ACCOUNT=dillgrp
+SLURM_JOB_CPUS_PER_NODE=10
+SLURM_JOB_END_TIME=1743795916
+SLURM_JOB_GID=1100
+SLURM_JOB_GPUS=0,1,2,3,4,5,6,7,8,9
+SLURM_JOB_ID=26494
+SLURM_JOBID=26494
+SLURM_JOB_NAME=adk_voronoi
+SLURM_JOB_NODELIST=node004
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_PARTITION=gpu_long
+SLURM_JOB_QOS=normal
+SLURM_JOB_START_TIME=1742931916
+SLURM_JOB_UID=1138
+SLURM_JOB_USER=anthony
+SLURM_LOCALID=0
+SLURM_NNODES=1
+SLURM_NODE_ALIASES=(null)
+SLURM_NODEID=0
+SLURM_NODELIST=node004
+SLURM_NPROCS=10
+SLURM_NTASKS=10
+SLURM_PRIO_PROCESS=0
+SLURM_PROCID=0
+SLURM_SUBMIT_DIR=/titan/anthony/voronoi2025/adk_pca
+SLURM_SUBMIT_HOST=laufer2
+SLURM_TASK_PID=2744322
+SLURM_TASKS_PER_NODE=10
+SLURM_TOPOLOGY_ADDR=node004
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_WORKING_CLUSTER=slurm:laufer2:6817:9984:109
+SSH_CLIENT=129.49.83.224 59980 2817
+SSH_CONNECTION=129.49.83.224 59980 129.49.83.27 2817
+SSH_TTY=/dev/pts/35
+ swfound=0;
+ swfound=0;
+ swname='compatibility';
+ swname='main';
+TERM=xterm
+TMPDIR=/tmp
+ unset IFS;
+ unset IFS;
+ unset _mlre _mlIFS;
+ unset _mlre _mlIFS;
+ unset _mlre _mlv _mlrv _mlIFS;
+ unset _mlre _mlv _mlrv _mlIFS;
+ unset _mlshdbg;
+ unset _mlshdbg;
+ unset MODULES_USE_COMPAT_VERSION;
+USER=anthony
+_=/usr/bin/env
+ *v*)
+ *v*)
+ *v*x*)
+ *v*x*)
+WEST_SIM_ROOT=/titan/anthony/voronoi2025/adk_pca
+which_declare=declare -f
+WM_ZMQ_MASTER_HEARTBEAT=100
+WM_ZMQ_WORKER_HEARTBEAT=100
+ *x*)
+ *x*)
+XDG_DATA_DIRS=/home/anthony/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+XDG_RUNTIME_DIR=/run/user/1138
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=12384
+XDG_SESSION_TYPE=tty
+ZE_AFFINITY_MASK=0,1,2,3,4,5,6,7,8,9
+== server info file /titan/anthony/voronoi2025/adk_pca/west_zmq_info-26494.json ==
+{"rr_endpoint": "tcp://node004:43749", "ann_endpoint": "tcp://node004:46493"}starting WEST client processes on: 
+node004
+current directory is /titan/anthony/voronoi2025/adk_pca
+environment is: 
+ *)
+ ;;
+ ;;
+ ;;
+ ;;
+}
+}
+}
+}
+AMBERHOME=/whale/software/amber24
+AMBER_PREFIX=/whale/software/amber24
+BASH_FUNC_ml%%=() {  module ml "$@"
+BASH_FUNC_module%%=() {  unset _mlshdbg;
+BASH_FUNC_switchml%%=() {  typeset swfound=1;
+BASH_FUNC_which%%=() {  ( alias;
+ case "$-" in 
+_CE_CONDA=
+_CE_M=
+CONDA_DEFAULT_ENV=westpa
+CONDA_EXE=/titan/anthony/apps/anaconda3/bin/conda
+CONDA_PREFIX_1=/titan/anthony/apps/anaconda3
+CONDA_PREFIX=/titan/anthony/apps/anaconda3/envs/westpa
+CONDA_PROMPT_MODIFIER=(westpa) 
+CONDA_PYTHON_EXE=/titan/anthony/apps/anaconda3/bin/python
+CONDA_SHLVL=2
+CPATH=/cm/shared/apps/openmpi4/gcc/4.1.5/include:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include
+CPATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:1:/cm/shared/apps/openmpi4/gcc/4.1.5/include:1
+CUDA_CACHE_DISABLE=1
+CUDA_CMLOCAL_ROOT=/cm/local/apps/cuda/libs/current
+CUDA_HOME=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_INC_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_INC_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2:1
+CUDA_INSTALL_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_ROOT=/cm/shared/apps/cuda12.2/toolkit/12.2.2
+CUDA_SDK=/cm/shared/apps/cuda12.2/sdk/12.2.2
+CUDA_VISIBLE_DEVICES_ALLOCATED=0,1,2,3,4,5,6,7,8,9
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1138/bus
+DEBUGINFOD_URLS=https://debuginfod.centos.org/ 
+ do
+ done;
+ echo "Cannot switch to Modules $swname version, command not found";
+ echo "Switching to Modules $swname version";
+ else
+ else
+ else
+ else
+ENABLE_LMOD=0
+ esac;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+ eval `eval ${_mlre} /usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash '"$@"'`;
+ eval `/usr/bin/tclsh /cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl bash "$@"`;
+ export MODULES_USE_COMPAT_VERSION;
+ fi
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ fi;
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+HISTCONTROL=ignoredups
+HISTSIZE=1000
+HOME=/home/anthony
+HOSTNAME=node004
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ if [ $swfound -eq 0 ]; then
+ if [ -e /cm/local/apps/environment-modules/4.5.3//libexec/modulecmd-compat ]; then
+ if [ -e /cm/local/apps/environment-modules/4.5.3//libexec/modulecmd.tcl ]; then
+ if [ -n "${IFS+x}" ]; then
+ if [ -n "${_mlIFS+x}" ]; then
+ if [ -n "${_mlre:-}" ]; then
+ if [ -n "${_mlshdbg:-}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ IFS=' ';
+ IFS=$_mlIFS;
+INCLUDEPATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2/extras/Debugger/include:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include/CL:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include
+INCLUDEPATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/Common:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/extras/Debugger/include:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/include/CL:1
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:/cm/local/apps/cuda/libs/current/lib64:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:/whale/software/amber24/lib:/titan/anthony/apps/amber24/lib:/titan/anthony/apps/amber24/lib:/titan/anthony/apps/amber24/lib
+LD_LIBRARY_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:1:/whale/software/amber24/lib:1:/titan/anthony/apps/amber24/lib:1:/cm/shared/apps/openmpi4/gcc/4.1.5/lib:1:/cm/local/apps/cuda/libs/current/lib64:1
+LD_RUN_PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:/cm/local/apps/cuda/libs/current/lib64
+LD_RUN_PATH_modshare=/cm/shared/apps/openmpi4/gcc/4.1.5/lib:1:/cm/local/apps/cuda/libs/current/lib64:1
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LIBRARY_PATH=/cm/local/apps/cuda/libs/current/lib64:/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib
+LIBRARY_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib:1:/cm/local/apps/cuda/libs/current/lib64:1
+_LMFILES__modshare=/cm/shared/modulefiles/openmpi/gcc/64/4.1.5:1:/whale/software/modulefiles/amber/2024:1:/cm/shared/modulefiles/cuda12.2/toolkit/12.2.2:1
+_LMFILES_=/whale/software/modulefiles/amber/2024:/cm/shared/modulefiles/cuda12.2/toolkit/12.2.2:/cm/shared/modulefiles/openmpi/gcc/64/4.1.5
+LOADEDMODULES=amber/2024:cuda12.2/toolkit/12.2.2:openmpi/gcc/64/4.1.5
+LOADEDMODULES_modshare=openmpi/gcc/64/4.1.5:1:amber/2024:1:cuda12.2/toolkit/12.2.2:1
+LOCAL=/local/26494
+LOGNAME=anthony
+MAIL=/var/spool/mail/anthony
+MANPATH=/cm/shared/apps/openmpi4/gcc/4.1.5/share/man/:/cm/local/apps/cuda/libs/current/share/man:/cm/local/apps/environment-modules/4.5.3//share/man:/usr/local/share/man:/usr/share/man:/cm/local/apps/environment-modules/current/share/man:/cm/local/apps/environment-modules/current/share/man
+MANPATH_modshare=/cm/shared/apps/openmpi4/gcc/4.1.5/share/man/:1:/cm/local/apps/cuda/libs/current/share/man:1:/usr/local/share/man:1:/cm/local/apps/environment-modules/4.5.3//share/man:1:/cm/local/apps/environment-modules/current/share/man:1:/usr/share/man:1
+ _mlIFS=$IFS;
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlshdbg=''
+ _mlshdbg='v'
+ _mlshdbg='vx'
+ _mlshdbg='x'
+ _mlstatus=$?;
+MODULEPATH=/cm/local/modulefiles:/cm/shared/modulefiles:/whale/software/modulefiles:/data01/software/modulefiles
+MODULES_CMD=/cm/local/apps/environment-modules/4.5.3/libexec/modulecmd.tcl
+MODULESHOME=/cm/local/apps/environment-modules/4.5.3/
+MODULES_SET_SHELL_STARTUP=0
+ MODULES_USE_COMPAT_VERSION=1;
+MOTD_SHOWN=pam
+MPI_HOME=/cm/shared/apps/openmpi4/gcc/4.1.5
+MPI_RUN=/cm/shared/apps/openmpi4/gcc/4.1.5/bin/mpirun
+OLDPWD=/home/anthony
+PATH=/cm/shared/apps/openmpi4/gcc/4.1.5/bin:/cm/local/apps/cuda/libs/current/bin:/cm/shared/apps/cuda12.2/sdk/12.2.2/bin/x86_64/linux/release:/cm/shared/apps/cuda12.2/toolkit/12.2.2/bin:/whale/software/amber24/bin:/titan/anthony/apps/amber24/bin:/titan/anthony/apps/dssp-2.3.0:/titan/anthony/apps/wham/wham-2d:/titan/anthony/apps/amber24/bin:/titan/anthony/apps/dssp-2.3.0:/titan/anthony/apps/wham/wham-2d:/cm/local/apps/environment-modules/4.5.3/bin:/titan/anthony/apps/amber24/bin:/titan/anthony/apps/anaconda3/envs/westpa/bin:/titan/anthony/apps/anaconda3/condabin:/titan/anthony/apps/dssp-2.3.0:/titan/anthony/apps/wham/wham-2d:/cm/local/apps/environment-modules/4.5.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/sbin:/cm/local/apps/environment-modules/4.5.3/bin:/home/anthony/.local/bin:/home/anthony/bin
+PATH_modshare=/home/anthony/bin:1:/usr/bin:1:/cm/local/apps/cuda/libs/current/bin:1:/usr/local/bin:1:/titan/anthony/apps/anaconda3/envs/westpa/bin:1:/home/anthony/.local/bin:1:/titan/anthony/apps/dssp-2.3.0:1:/sbin:1:/cm/shared/apps/openmpi4/gcc/4.1.5/bin:1:/usr/sbin:1:/titan/anthony/apps/wham/wham-2d:1:/cm/local/apps/environment-modules/4.5.3/bin:1:/titan/anthony/apps/anaconda3/condabin:1:/titan/anthony/apps/amber24/bin:1:/whale/software/amber24/bin:1:/cm/shared/apps/cuda12.2/toolkit/12.2.2/bin:1:/usr/local/sbin:1:/cm/shared/apps/cuda12.2/sdk/12.2.2/bin/x86_64/linux/release:1
+PERL5LIB_modshare=/whale/software/amber24/lib/perl:1:/titan/anthony/apps/amber24/lib/perl:1
+PERL5LIB=/whale/software/amber24/lib/perl:/titan/anthony/apps/amber24/lib/perl:/titan/anthony/apps/amber24/lib/perl:/titan/anthony/apps/amber24/lib/perl
+PKG_CONFIG_PATH=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib/pkgconfig
+PKG_CONFIG_PATH_modshare=/cm/shared/apps/cuda12.2/toolkit/12.2.2/targets/x86_64-linux/lib/pkgconfig:1
+PWD=/titan/anthony/voronoi2025/adk_pca
+PYTHONPATH_modshare=/whale/software/amber24/lib/python3.12/site-packages:1:/titan/anthony/apps/amber24/lib/python3.12/site-packages:1
+PYTHONPATH=/whale/software/amber24/lib/python3.12/site-packages:/titan/anthony/apps/amber24/lib/python3.12/site-packages:/titan/anthony/apps/amber24/lib/python3.12/site-packages:/titan/anthony/apps/amber24/lib/python3.12/site-packages
+QUICK_BASIS=/titan/anthony/apps/amber24/AmberTools/src/quick/basis
+ return $_mlstatus
+ return 1;
+S_COLORS=auto
+ set -$_mlshdbg;
+ set +v;
+ set +vx;
+ set +x;
+SHELL=/bin/bash
+SHLVL=1
+SIM_NAME=adk_pca
+SLURM_NODENAME=node004
+ source /cm/local/apps/environment-modules/4.5.3//init/bash;
+SSH_CLIENT=10.141.0.4 58602 22
+SSH_CONNECTION=10.141.0.4 58602 10.141.0.4 22
+TERM=xterm
+TMPDIR=/local/26494
+ typeset swfound=0;
+ typeset swfound=0;
+ typeset swname='compatibility';
+ typeset swname='main';
+ unset IFS;
+ unset _mlre _mlIFS;
+ unset _mlre _mlv _mlrv _mlIFS;
+ unset _mlshdbg;
+ unset MODULES_USE_COMPAT_VERSION;
+USER=anthony
+_=/usr/bin/env
+ *v*)
+ *v*x*)
+WEST_JOBID=26494
+WEST_SIM_ROOT=/titan/anthony/voronoi2025/adk_pca
+which_declare=declare -f
+WM_ZMQ_MASTER_HEARTBEAT=100
+WM_ZMQ_WORKER_HEARTBEAT=100
+ *x*)
+XDG_RUNTIME_DIR=/run/user/1138
+XDG_SESSION_CLASS=user
+XDG_SESSION_ID=112924
+XDG_SESSION_TYPE=tty
+CUDA_VISIBLE_DEVICES = 

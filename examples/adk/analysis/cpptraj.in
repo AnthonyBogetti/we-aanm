@@ -1,0 +1,6 @@
+parm ../common_files/4ake.prmtop
+trajin ../reppath2.dcd
+angle nmp-core :115-125@CA :90-100@CA :35-55@CA out reppath2.dat
+angle lid-core :179-185@CA :115-125@CA :125-153@CA out reppath2.dat
+go
+quit
