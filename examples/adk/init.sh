@@ -50,6 +50,8 @@ if [[ $CHOICE -eq  1 ]]; then
     cp common_files/$PDB2 centers
     cd centers
     python aanm.py &> aanm.log
+    cp ../template_files/disang.in .
+    cpptraj -i disang.in
     cat $PDB1 | grep "CA" > top.pdb
     NBINS=$(tail aanm.log | grep "cycle" | awk {'print $3'})
     NBINS=$((2 * $NBINS + 1))
