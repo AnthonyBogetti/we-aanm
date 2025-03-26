@@ -65,7 +65,7 @@ if [[ $CHOICE -eq  1 ]]; then
         cd ../
         sed -e "s/NATOMS/${NATOMS}/g" -e "s/NFRAMES/${NFRAMES}/g" -e "s|WSR|${WSR}|g" template_files/system.py > system.py
 	cp template_files/get_pcoord.sh westpa_scripts
-	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg.sh westpa_scripts
+	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg.sh > westpa_scripts/runseg.sh
 
     elif [[ $METHOD -eq  2 ]]; then
 	cp ../template_files/align.in .
@@ -78,7 +78,7 @@ if [[ $CHOICE -eq  1 ]]; then
 	sed -e "s/NPCS/${NPCS}/g" -e "s/NFRAMES/${NFRAMES}/g" template_files/get_pcs.py > common_files/get_pcs.py
         sed -e "s/NPCS/${NPCS}/g" -e "s/NFRAMES/${NFRAMES}/g" -e "s|WSR|${WSR}|g" template_files/system_pca.py > system.py
 	cp template_files/get_pcoord_pca.sh westpa_scripts/get_pcoord.sh
-	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg_pca.sh westpa_scripts/runseg.sh
+	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg_pca.sh > westpa_scripts/runseg.sh
 
     fi
 
