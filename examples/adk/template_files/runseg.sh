@@ -49,8 +49,8 @@ python $WEST_SIM_ROOT/common_files/get_coords.py 0
 cat seg_coords.npy > $WEST_PCOORD_RETURN
 
 # Save auxdata
-cat disang.dat | tail -n +2 | awk {'print $2'} > $WEST_NMP_RETURN
-cat disang.dat | tail -n +2 | awk {'print $3'} > $WEST_LID_RETURN
+cat disang.dat | tail -n +2 | awk {'print $2'} > $WEST_AUX1_RETURN
+cat disang.dat | tail -n +2 | awk {'print $3'} > $WEST_AUX2_RETURN
 
 # Save segmnet trajectory to HDF5 file
 cp top.prmtop $WEST_TRAJECTORY_RETURN

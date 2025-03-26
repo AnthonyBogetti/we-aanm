@@ -70,8 +70,8 @@ python $WEST_SIM_ROOT/common_files/get_pcs.py -1
 cat center_id.txt > $WEST_CENTER_ID_RETURN
 
 # Save auxdata
-cat disang.dat | tail -n +2 | awk {'print $2'} > $WEST_NMP_RETURN
-cat disang.dat | tail -n +2 | awk {'print $3'} > $WEST_LID_RETURN
+cat disang.dat | tail -n +2 | awk {'print $2'} > $WEST_AUX1_RETURN
+cat disang.dat | tail -n +2 | awk {'print $3'} > $WEST_AUX2_RETURN
 cat rmsd.dat | tail -n +2 | awk {'print $2'} > $WEST_PDB1_RMSD_RETURN
 cat rmsd.dat | tail -n +2 | awk {'print $3'} > $WEST_PDB2_RMSD_RETURN
 
