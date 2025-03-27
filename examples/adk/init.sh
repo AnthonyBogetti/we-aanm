@@ -41,8 +41,8 @@ if [[ $CHOICE -eq  1 ]]; then
     WSR=$WEST_SIM_ROOT
     PDB1="1ake.amber.pdb"
     PDB2="4ake.amber.pdb"
-    AUX1="angle aux1 :115-125@CA :90-100@CA :35-55@CA out disang.dat"
-    AUX2="angle aux2 :179-185@CA :115-125@CA :125-153@CA out disang.dat"
+    AUX1CMD="angle aux1 :115-125@CA :90-100@CA :35-55@CA out disang.dat"
+    AUX2CMD="angle aux2 :179-185@CA :115-125@CA :125-153@CA out disang.dat"
     
     rm -rf system.py west.cfg executable.py centers westpa_scripts/get_pcoord.sh westpa_scripts/runseg.sh
     mkdir centers
@@ -67,6 +67,7 @@ if [[ $CHOICE -eq  1 ]]; then
 	cp template_files/get_coords.py common_files
 	cp template_files/get_pcoord.sh westpa_scripts
 	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg.sh > westpa_scripts/runseg.sh
+	chmod +x westpa_scripts/runseg.sh
 
     elif [[ $METHOD -eq  2 ]]; then
 	cp ../template_files/align.in .
@@ -80,6 +81,7 @@ if [[ $CHOICE -eq  1 ]]; then
         sed -e "s/NPCS/${NPCS}/g" -e "s/NFRAMES/${NFRAMES}/g" -e "s|WSR|${WSR}|g" template_files/system_pca.py > system.py
 	cp template_files/get_pcoord_pca.sh westpa_scripts/get_pcoord.sh
 	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg_pca.sh > westpa_scripts/runseg.sh
+	chmod +x westpa_scripts/runseg.sh
 
     fi
 
