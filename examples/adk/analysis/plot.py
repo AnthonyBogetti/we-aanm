@@ -2,21 +2,21 @@ import wedap
 import numpy as np
 import matplotlib.pyplot as plt
 
-plt.rcParams.update({'font.size': 16, 'axes.linewidth': 1.5, 'figure.figsize': (5,5)})
+plt.rcParams.update({'font.size': 16, 'axes.linewidth': 1.5})
 
 data_options = {"h5" : "west.h5",
-                "Xname" : "nmp",
-                "Yname" : "lid",
+                "Xname" : "aux1",
+                "Yname" : "aux2",
 #                "Xindex" : 0,
 #                "Yindex" : 0,
                 "data_type" : "average",
 #                "p_max" : 10,
-                "bins" : 50,
+#                "bins" : 50,
                 "cbar_label" : "-ln(P)",
-                "xlabel" : "nmp-core angle",
-                "ylabel" : "lid-core angle",
-                "xlim" : (40,85),
-                "ylim" : (90,165),
+                "xlabel" : "aux1",
+                "ylabel" : "aux2",
+#                "xlim" : (40,85),
+#                "ylim" : (90,165),
 #                "cmap" : "jet_r",
                 }
 

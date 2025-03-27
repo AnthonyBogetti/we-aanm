@@ -53,7 +53,7 @@ if [[ $CHOICE -eq  1 ]]; then
     cd centers
     cat $PDB1 | grep "CA" > top.pdb
     python aanm.py &> aanm.log
-    cp ../template_files/disang.in .
+    sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" ../template_files/disang.in > disang.in
     cpptraj -i disang.in
     NBINS=$(tail aanm.log | grep "cycle" | awk {'print $3'})
     NBINS=$((2 * $NBINS + 1))
