@@ -64,6 +64,7 @@ if [[ $CHOICE -eq  1 ]]; then
         python get_center_coords.py
         cd ../
         sed -e "s/NATOMS/${NATOMS}/g" -e "s/NFRAMES/${NFRAMES}/g" -e "s|WSR|${WSR}|g" template_files/system.py > system.py
+	cp template_files/get_coords.py common_files
 	cp template_files/get_pcoord.sh westpa_scripts
 	sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" template_files/runseg.sh > westpa_scripts/runseg.sh
 
