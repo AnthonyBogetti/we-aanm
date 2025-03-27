@@ -41,13 +41,14 @@ if [[ $CHOICE -eq  1 ]]; then
     WSR=$WEST_SIM_ROOT
     PDB1="1ake.amber.pdb"
     PDB2="4ake.amber.pdb"
+    AANMMODE="AANM_ALTERNATING"
     AUX1CMD="angle aux1 :115-125@CA :90-100@CA :35-55@CA out disang.dat"
     AUX2CMD="angle aux2 :179-185@CA :115-125@CA :125-153@CA out disang.dat"
     
     rm -rf system.py west.cfg executable.py centers westpa_scripts/get_pcoord.sh westpa_scripts/runseg.sh
     mkdir centers
     
-    sed -e "s/PDB1/${PDB1}/g" -e "s/PDB2/${PDB2}/g" template_files/aanm.py > centers/aanm.py
+    sed -e "s/PDB1/${PDB1}/g" -e "s/PDB2/${PDB2}/g" -e "s/AANMMODE/${AANMMODE}/g" template_files/aanm.py > centers/aanm.py
     cp common_files/$PDB1 centers
     cp common_files/$PDB2 centers
     cd centers
