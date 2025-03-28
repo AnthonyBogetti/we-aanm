@@ -1,6 +1,6 @@
 from prody import *
 
-c = parsePDB("PDB1", subset='ca')
-o = parsePDB("PDB2", subset='ca')
-ens = calcAdaptiveANM(o, c, 100, f=0.1, mode=AANMMODE)
+p1 = parsePDB("PDB1", subset='ca')
+p2 = parsePDB("PDB2", subset='ca')
+ens = calcAdaptiveANM(p1, p2, 100, mode=AANMMODE)
 writeDCD("ens.dcd", ens)
