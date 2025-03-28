@@ -57,7 +57,11 @@ if [[ $CHOICE -eq  1 ]]; then
     sed -e "s/AUX1CMD/${AUX1CMD}/g" -e "s/AUX2CMD/${AUX2CMD}/g" ../template_files/disang.in > disang.in
     cpptraj -i disang.in
     NBINS=$(tail aanm.log | grep "cycle" | awk {'print $3'})
-    NBINS=$((2 * $NBINS + 1))
+    if [[ "$AANMMODE" ==  "AANM_ALTERNATING" ]]; then
+        NBINS=$((2 * $NBINS + 1))
+    else
+        NBINS=$(($NBINS + 1))
+    fi
     NATOMS=$(cat top.pdb | wc | awk {'print $1'})
     
     if [[ $METHOD -eq  1 ]]; then
